@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demy</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <!-- Jost Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"/>
+   <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/bootstrap.min.css"/>
+    <!-- Fontawesome Css File -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/all.min.css"/>
+    <!-- Owl Carousel Css Files -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/exetrnal/owl.theme.default.min.css" />
+    <!-- style Css File -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+     <!-- style Css File -->
+     <link rel="stylesheet" href="./assets/css/grid-sidebar.css"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header" id="mainHeader">
+        <nav class="navbar ">
+            <div class="main-container container">
+              <button class="main-header__toggle navbar-toggler d-lg-none" type="button" id="navShow">
+                <i class="fas fa-bars"></i>
+              </button>
+              <a class="main-header__logo navbar-brand" href="index.html">
+                  <img class="main-header__logo-img" src="./assets/img/logo.png" alt="Demy" />
+              </a>
+              <div class="main-header__menu d-lg-block" id="headerMenu">
+                <ul class=" main-header__menu-list me-auto mb-2 mb-lg-0">
+                  <li class="nav-item my-0 ">
+                    <button class="main-header__link d-lg-none menu--close text-end navbar-toggler" type="button" id="navClose">
+                      <i class="fa fa-times fa-lg"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item my-0">
+                    <a class="main-header__link link--active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item my-0">
+                    <a class="main-header__link" href="./grid-layout-with-sidebar.html">Courses</a>
+                  </li>
+                  <li class="nav-item my-0 dropdown">
+                    <a class="main-header__link main-header__dropdown-link dropdown-toggle" 
+                    id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                      Pages <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="collapse main-header__dropdown dropdown-menu"  aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="#">Shop Pages</a>
+                      </li>
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="./about.html">About Us</a>
+                      </li>
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="./contact-us.html">Contact</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="my-0 nav-item">
+                    <a class="main-header__link disabled">Dashbord</a>
+                  </li>
+                </ul> 
+              </div>
+              <div class="d-flex justify-content-end align-items-center w-sm-50">
+                <a href="./login.html" class="btn main-header__link d-none d-lg-block">
+                    <i class="fas fa-sign-in-alt"></i> 
+                    <span> Sign In </span> 
+                </a>
+              <a href="./sign-up.html" class="btn main-header__btn">Get Started</a>
+            </div>
+            </div>
+        </nav>
+    </header><!-- ./main-header -->
+    <main>
+        <!-- Intro Section -->
+        <section class="intro-section">
+            <div class="container main-container">
+                <h1 class="text-capitalize">courses grid style</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item intro-section__item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item intro-section__item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+        </section><!-- ./intro-section -->
+        <!-- Content Section -->
+        <section class="content">        
+          <div class="container main-container">
+              <div class="row">
+                  <div class="col-12 col-md-4">
+                      <!-- Sidebar Section -->
+                      <aside class="sidebar">
+                          <form action="" class="sidebar__form">
+                              <div class="form-group mb-3 position-relative">
+                                <img class="sidebar__search-icon position-absolute" src="./assets/img/search.svg" alt="search " />
+                                <input class="sidebar__input form-control form-control-lg search--input" type="text" placeholder="Search Your Courses"/>
+                              </div>
+                              <div class="sidebar__input form-group form-floating mb-3">
+                                <select class="form-select form-select-lg form-floating" aria-label=".form-select-lg Floating label select example" id="floatingSelect">
+                                  <option value="" data-select2-id="2">&nbsp;</option>
+                                  <option value="1" data-select2-id="8">IT &amp; Software</option>
+                                  <option value="2" data-select2-id="9">Banking</option>
+                                  <option value="3" data-select2-id="10">Medical</option>
+                                  <option value="4" data-select2-id="11">Insurence</option>
+                                  <option value="5" data-select2-id="12">Finance &amp; Accounting</option>
+                                </select>
+                                <label class="sidebar__form-label" for="floatingSelect">Choose Category</label>
+                              </div>
+                              <div>
+                                  <h6 class="sidebar__title text-capitalize">top instructor</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-1"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-1">
+                                        Keny White
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      12
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-2"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-2">
+                                        Hinata Hyuga
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      10
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-3"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-3">
+                                        Mike hussy
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      56
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-4"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-4">
+                                        Adam Riky
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      42
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-5"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-5">
+                                        Dev Patel
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      12
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-6"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-6">
+                                        Mike Hussy
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      36
+                                    </p>
+                                  </div>
+                                    
+                              </div>
+                              <div>
+                                  <h6 class="sidebar__title text-capitalize my-3">Skill Level</h6>
+                                  
+                                  <div class="form-check position-relative mb-2">
+                                    <i class="fas fa-check sidebar__check-icon"></i>
+                                    <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-7"/>
+                                    <label class="form-check-label sidebar__check-label" for="flexCheckDefault-7">
+                                      Beginning
+                                    </label>
+                                  </div>
+                                  
+                                  <div class="form-check position-relative mb-2">
+                                    <i class="fas fa-check sidebar__check-icon"></i>
+                                    <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-8"/>
+                                    <label class="form-check-label sidebar__check-label" for="flexCheckDefault-8">
+                                      Basic Level
+                                    </label>
+                                  </div>
+                                  
+                                  <div class="form-check position-relative mb-2">
+                                    <i class="fas fa-check sidebar__check-icon"></i>
+                                    <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-9"/>
+                                    <label class="form-check-label sidebar__check-label" for="flexCheckDefault-9">
+                                      Iner Level
+                                    </label>
+                                  </div>
+                                  
+                                  <div class="form-check position-relative mb-2">
+                                    <i class="fas fa-check sidebar__check-icon"></i>
+                                    <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-10"/>
+                                    <label class="form-check-label sidebar__check-label" for="flexCheckDefault-10">
+                                      Advance
+                                    </label>
+                                  </div>
+                              
+                                
+                              </div>
+                              <div>
+                                  <h6 class="sidebar__title text-capitalize">Price</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-11"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-11">
+                                        All
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      89
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-12"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-12">
+                                        Free
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      56
+                                    </p>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-check position-relative">
+                                      <i class="fas fa-check sidebar__check-icon"></i>
+                                      <input class="form-check-input sidebar__checkbox" type="checkbox" id="flexCheckDefault-13"/>
+                                      <label class="form-check-label sidebar__check-label" for="flexCheckDefault-13">
+                                        Paid
+                                      </label>
+                                    </div>
+                                    <p class="sidebar__num d-flex justify-content-center align-items-center rounded-circle">
+                                      42
+                                    </p>
+                                  </div>
+                              </div>
+                                <input class="sidebar__submit btn w-100" type="submit" value="Apply Filter" />
+                          </form>
+                      </aside><!-- ./sidebar -->
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <!-- Courses Section -->
+                    <section class="courses-conten">
+                      <nav class="courses__nav d-flex justify-content-between align-items-center">
+                        <h6 class="courses__nav-title">Showing 
+                          <span> 1-25 </span> Of 
+                          <span> 72 </span>
+                        </h6>
+                        <div class="coursees-list d-flex align-items-center">
+                          <div class="dropdown">
+                            <span>Short By:</span>
+                            <button class="coursees-list__btn btn dropdown-toggle" type="button" id="dropdownMenuButton99" data-bs-toggle="dropdown" aria-expanded="false">
+                              Most Rated
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton99">
+                              <li><a class="dropdown-item" href="#">Most Rated</a></li>
+                              <li><a class="dropdown-item" href="#">Most Viewd</a></li>
+                              <li><a class="dropdown-item" href="#">News Listings</a></li>
+                              <li><a class="dropdown-item" href="#">High Rated</a></li>
+                            </ul>
+                          </div>
+                          <button class="coursees-list__btn btn">
+                            <img src="./assets/img/grid.svg" alt="grid"/>
+                          </button>
+                          <button class="coursees-list__btn btn">
+                            <img src="./assets/img/list.svg" alt="list"/>
+                          </button>
+                        </div>
+                      </nav>
+                      <div class="content">
+                        <!-- Courses Grid -->
+                        <div class="courses-grid">
+                          <div class="row">
+                            <div class="col-12 col-sm-6">
+                              <article class="courses-card position-relative top-0 left-0 bg-white">
+                                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-play"></i>
+                                  </div>
+                                </div>
+                                <a href="#">
+                                  <figure class="courses-card__figure px-10">
+                                    <img class="courses-card__img mw-100" src="./assets/img/Courses/03.jpeg" alt="courses detiles">
+                                  </figure>
+                                </a>
+                                <div class="courses-card__body">
+                                  <div class="d-flex justify-content-between align-items-center px-10">
+                                    <h6 class="courses-card__cat-title title-color-1">Design</h6>
+                                    <a href="#" class="courses-card__instr-link grid--instr position-relative">
+                                      <figure>
+                                        <img class="courses-card__instr-img grid--img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                                      </figure>
+                                    </a>
+                                    <!-- Edit  -->
+                                  </div>
+                                  <a href="#" class="">
+                                    <h6 class="h6 courses-card__title px-10">UI/UX Design Pattern For Succesfull Software Applications</h6>
+                                  </a>
+                                  <div class="courses-card__info d-flex justify-content-between px-10">
+                                    <div>
+                                      <i class="fa fa-video"></i>
+                                      <span>24 Videos</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-user"></i>
+                                      <span>10k User</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-eye"></i>
+                                      <span>92k Views</span>
+                                    </div>
+                                  </div>
+                                  <div class=" px-10">
+                                    <div class="progress coursees-card__progress">
+                                      <div class="coursees-card__progress-bar progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>199</span>
+                                  </h2>
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </article><!-- ./courses-card 01 -->
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <article class="courses-card position-relative top-0 left-0 bg-white">
+                                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-play"></i>
+                                  </div>
+                                </div>
+                                <a href="#">
+                                  <figure class="courses-card__figure px-10">
+                                    <img class="courses-card__img mw-100" src="./assets/img/Courses/04.jpeg" alt="courses detiles">
+                                  </figure>
+                                </a>
+                                <div class="courses-card__body">
+                                  <div class="d-flex justify-content-between align-items-center px-10">
+                                    <h6 class="courses-card__cat-title title-color-8">Development</h6>
+                                    <a href="#" class="courses-card__instr-link grid--instr position-relative">
+                                      <figure>
+                                        <img class="courses-card__instr-img grid--img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                                      </figure>
+                                    </a>
+                                  </div>
+                                  <a href="#" class="">
+                                    <h6 class="h6 courses-card__title px-10">Advance PHP Knowledge With Laravel To Make Smart Web</h6>
+                                  </a>
+                                  <div class="courses-card__info d-flex justify-content-between px-10">
+                                    <div>
+                                      <i class="fa fa-video"></i>
+                                      <span>24 Videos</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-user"></i>
+                                      <span>10k User</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-eye"></i>
+                                      <span>92k Views</span>
+                                    </div>
+                                  </div>
+                                  <div class=" px-10">
+                                    <div class="progress coursees-card__progress">
+                                      <div class="coursees-card__progress-bar progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>139</span>
+                                  </h2>
+                                  
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </article><!-- ./courses-card 02 -->
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <article class="courses-card position-relative top-0 left-0 bg-white">
+                                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-play"></i>
+                                  </div>
+                                </div>
+                                <a href="#">
+                                  <figure class="courses-card__figure px-10">
+                                    <img class="courses-card__img mw-100" src="./assets/img/Courses/02.jpeg" alt="courses detiles">
+                                  </figure>
+                                </a>
+                                <div class="courses-card__body">
+                                  <div class="d-flex justify-content-between align-items-center px-10">
+                                    <h6 class="courses-card__cat-title title-color-2">Banking</h6>
+                                    <a href="#" class="courses-card__instr-link grid--instr position-relative">
+                                      <figure>
+                                        <img class="courses-card__instr-img grid--img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                                      </figure>
+                                    </a>
+                                  </div>
+                                  <a href="#" class="">
+                                    <h6 class="h6 courses-card__title px-10">The Complete Accounting & Bank Financial Course 2021</h6>
+                                  </a>
+                                  <div class="courses-card__info d-flex justify-content-between px-10">
+                                    <div>
+                                      <i class="fa fa-video"></i>
+                                      <span>24 Videos</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-user"></i>
+                                      <span>10k User</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-eye"></i>
+                                      <span>92k Views</span>
+                                    </div>
+                                  </div>
+                                  <div class=" px-10">
+                                    <div class="progress coursees-card__progress">
+                                      <div class="coursees-card__progress-bar progress-bar" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>79</span>
+                                  </h2>
+                                  
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </article><!-- ./courses-card 03 -->
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <article class="courses-card position-relative top-0 left-0 bg-white">
+                                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-play"></i>
+                                  </div>
+                                </div>
+                                <a href="#">
+                                  <figure class="courses-card__figure px-10">
+                                    <img class="courses-card__img mw-100" src="./assets/img/Courses/03.jpeg" alt="courses detiles">
+                                  </figure>
+                                </a>
+                                <div class="courses-card__body">
+                                  <div class="d-flex justify-content-between align-items-center px-10">
+                                    <h6 class="courses-card__cat-title title-color-3">Business</h6>
+                                    <a href="#" class="courses-card__instr-link grid--instr position-relative">
+                                      <figure>
+                                        <img class="courses-card__instr-img grid--img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                                      </figure>
+                                    </a>
+                                  </div>
+                                  <a href="#" class="">
+                                    <h6 class="h6 courses-card__title px-10">The Complete Business Plan Course Includes 50 Templates</h6>
+                                  </a>
+                                  <div class="courses-card__info d-flex justify-content-between px-10">
+                                    <div>
+                                      <i class="fa fa-video"></i>
+                                      <span>24 Videos</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-user"></i>
+                                      <span>10k User</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-eye"></i>
+                                      <span>92k Views</span>
+                                    </div>
+                                  </div>
+                                  <div class=" px-10">
+                                    <div class="progress coursees-card__progress">
+                                      <div class="coursees-card__progress-bar progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>129</span>
+                                  </h2>
+                                  
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </article><!-- ./courses-card 04 -->
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <article class="courses-card position-relative top-0 left-0 bg-white">
+                                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-play"></i>
+                                  </div>
+                                </div>
+                                <a href="#">
+                                  <figure class="courses-card__figure px-10">
+                                    <img class="courses-card__img mw-100" src="./assets/img/Courses/04.jpeg" alt="courses detiles">
+                                  </figure>
+                                </a>
+                                <div class="courses-card__body">
+                                  <div class="d-flex justify-content-between align-items-center px-10">
+                                    <h6 class="courses-card__cat-title title-color-4">Software</h6>
+                                    <a href="#" class="courses-card__instr-link grid--instr position-relative">
+                                      <figure>
+                                        <img class="courses-card__instr-img grid--img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                                      </figure>
+                                    </a>
+                                  </div>
+                                  <a href="#" class="">
+                                    <h6 class="h6 courses-card__title px-10">Full Web Designing Course With 20 Web Template Designing</h6>
+                                  </a>
+                                  <div class="courses-card__info d-flex justify-content-between px-10">
+                                    <div>
+                                      <i class="fa fa-video"></i>
+                                      <span>24 Videos</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-user"></i>
+                                      <span>10k User</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-eye"></i>
+                                      <span>92k Views</span>
+                                    </div>
+                                  </div>
+                                  <div class=" px-10">
+                                    <div class="progress coursees-card__progress">
+                                      <div class="coursees-card__progress-bar progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>99</span>
+                                  </h2>
+                                  
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </article><!-- ./courses-card 05 -->
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <article class="courses-card position-relative top-0 left-0 bg-white">
+                                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                                    <i class="fa fa-play"></i>
+                                  </div>
+                                </div>
+                                <a href="#">
+                                  <figure class="courses-card__figure px-10">
+                                    <img class="courses-card__img mw-100" src="./assets/img/Courses/02.jpeg" alt="courses detiles">
+                                  </figure>
+                                </a>
+                                <div class="courses-card__body">
+                                  <div class="d-flex justify-content-between align-items-center px-10">
+                                    <h6 class="courses-card__cat-title title-color-1">Design</h6>
+                                    <a href="#" class="courses-card__instr-link grid--instr position-relative">
+                                      <figure>
+                                        <img class="courses-card__instr-img grid--img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                                      </figure>
+                                    </a>
+                                  </div>
+                                  <a href="#" class="">
+                                    <h6 class="h6 courses-card__title px-10">Sociology Optional: Test Series For UPSC CSE Mains (2021 & 2022)</h6>
+                                  </a>
+                                  <div class="courses-card__info d-flex justify-content-between px-10">
+                                    <div>
+                                      <i class="fa fa-video"></i>
+                                      <span>24 Videos</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-user"></i>
+                                      <span>10k User</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa fa-eye"></i>
+                                      <span>92k Views</span>
+                                    </div>
+                                  </div>
+                                  <div class=" px-10">
+                                    <div class="progress coursees-card__progress">
+                                      <div class="coursees-card__progress-bar progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>149</span>
+                                  </h2>
+                                  
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </article><!-- ./courses-card 06 -->
+                            </div>
+                          </div>
+                        </div><!-- ./courses-grid -->
+                        <!-- Courses List -->
+                        <div class="courses-list d-none">
+                          <article class="courses-card position-relative top-0 left-0 bg-white">
+                            <div class="d-flex">
+                              <a href="#" class="courses-card__link">
+                                <figure class="courses-card__figure px-10">
+                                  <img class="courses-card__img mw-100" src="./assets/img/Courses/03.jpeg" alt="courses detiles">
+                                </figure>
+                              </a>
+                              <div class="courses-card__body px-10">
+                                <div class="d-flex align-items-center">
+                                  <h6 class="courses-card__cat-title title-color-7 rounded me-2">Design</h6>
+                                  <h6 class="courses-card__cat-title title-color-8 rounded">Banking</h6>
+                                </div>
+                                <div>
+                                  <h4 class="courses-card__list-title">UI/UX Design Pattern For Succesfull Software Applications</h4>
+                                  <p class="courses-card__auth">
+                                    <span>By</span>
+                                    <span class="main-color">Adam Wilson </span></p>
+                                </div>
+                                <div class="courses-card__info d-flex justify-content-between">
+                                  <div>
+                                    <i class="fa fa-video"></i>
+                                    <span>24 Videos</span>
+                                  </div>
+                                  <div>
+                                    <i class="fa fa-user"></i>
+                                    <span>10k User</span>
+                                  </div>
+                                  <div>
+                                    <i class="fa fa-eye"></i>
+                                    <span>92k Views</span>
+                                  </div>
+                                </div> 
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <h2 class="courses-card__price">
+                                    $<span>149</span>
+                                  </h2>
+                                  
+                                  <button class="btn courses-card__btn">Enrolled Now</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="courses-card__footer d-flex justify-content-between align-items-center">
+                              <a href="#" class="courses-card__prview">
+                                <i class="fas fa-play text-success"></i>
+                                View Preview
+                              </a>
+                              <div class="d-flex">
+                                <p class="me-3">
+                                  <i class="fa fa-lightbulb text-info"></i>
+                                  Beginning
+                                </p>
+                                <p>
+                                  <i class="fa fa-hourglass-half  text-warning"></i>
+                                  01:42:10
+                                </p>
+                              </div>
+                            </div>
+                          </article><!-- ./courses-card 01 -->
+                            
+                        </div><!-- ./courses-list -->
+                      </div>
+                      <!-- Pagination Section -->
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="courses__page-item page-item disabled">
+                            <a class="courses__page-link page-link d-flex justify-content-center">
+                              <img src="./assets/img/arrow-left.svg" alt="arrow-left" />
+                            </a>
+                          </li>
+                          <li class="courses__page-item page-item">
+                            <a class="courses__page-link page-link d-flex justify-content-center" href="#">1</a>
+                          </li>
+                          <li class="courses__page-item page-item">
+                            <a class="courses__page-link page-link d-flex justify-content-center" href="#">2</a>
+                          </li>
+                          <li class="courses__page-item page-item">
+                            <a class="courses__page-link page-link d-flex justify-content-center" href="#">3</a>
+                          </li>
+                          <li class="courses__page-item page-item">
+                            <a class="courses__page-link page-link d-flex justify-content-center" href="#">..</a>
+                          </li>
+                          <li class="courses__page-item page-item">
+                            <a class="courses__page-link page-link d-flex justify-content-center" href="#">18</a>
+                          </li>
+                          <li class="courses__page-item page-item">
+                            <a class="courses__page-link page-link d-flex justify-content-center" href="#">
+                              <img src="./assets/img/arrow-right.svg" alt="arrow-right" />
+                            </a>
+                          </li>
+                        </ul>
+                      </nav><!-- ./pagination -->
+                    </section><!-- ./courses -->
+                  </div>
+              </div>
+          </div>
+        </section><!-- ./content-section -->
+        
+        <!-- Call Action -->
+        <section class="call-action">
+            <div class="container main-container">
+              <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                <div class="call-action__text">
+                  <h3 class="call-action__title">Do You Have Any Queries?</h3>
+                  <p class="call-action__desc">We will assist you in furthering your career and growth.</p>
+                </div>
+                <a class="btn call-action__btn text-center text-capitalize" href="#" target="_blank">talk to us</a>
+              </div>
+            </div>
+          </section><!-- ./call-action -->
+    </main>
+   
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      
+       <!-- Social Links -->
+       <section class="main-footer__social-links text-center text-capitalize">
+        <div class="container main-container">
+          <h2 class="main-footer__social-title text-capitalize">you can find us at</h2>
+          <div class="main-footer__social-list d-flex justify-content-center">
+            <a href="#" class="main-footer__social-item" title="facebook">
+              <i class="fab fa-facebook-square fa-2x main-footer__social-icon"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="Linkedin">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="twitter">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="youtube">
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </section><!-- ./main-footer__social-links -->
+      <div class="container main-container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+
+            <section class="main-footer__info">
+              <a href="#" class="w-100 d-flex justify-content-sm-center">
+                <img src="./assets/img/logo-light.png" class="img-fluid main-footer__img" alt="Logo"/>
+              </a>
+              <h5 class="text-white text-start  text-sm-center d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                <span>Why Us</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start text-sm-center d-lg-block" id="collapse">
+                
+                <h5 class="main-footer__title text-white">Do You Require Assistance With Anything?</h5>
+                <p class="main-footer__desc">Every month, receive updates, hot deals, tutorials, and discounts delivered directly to your inbox.</p>
+                <form action="" class="main-footer__form">
+                  <div class="d-flex">
+                    <input type="text" placeholder="Your Email" class="form-control"/>
+                    <input type="submit" value="Submit" class="btn main-footer__btn"/>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">Company</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse">
+                <span>Company</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start text-sm-center d-lg-block" id="collapse-1">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">iDemy Business</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Teach on iDemy</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Get the app</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">About us</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Contact us</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">More</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse">
+                <span>More</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start  text-sm-center d-lg-block" id="collapse-2">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">Careers</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Blog</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Help & Support</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Affiliate</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Investors</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">Customer</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse">
+                <span>Customer</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start  text-sm-center d-lg-block" id="collapse-3">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">Terms</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Privacy policy</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Cookie settings</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Sitemap</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Accessiblity statement</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Copy Right -->
+      <section class="main-footer__copy-right">
+        <div class="container main-container">
+          <p class="main-footer__copy-text text-center mb-0">©<script>document.write(new Date().getFullYear())</script>
+            iDemy
+            <!-- <a href="http://" target="_blank" rel="noopener noreferrer">Walid Omran</a> -->
+          </p>
+        </div>
+      </section><!-- ./main-footer__copy-right -->
+    </footer><!-- ./main-footer -->
+    <!-- jquery File -->
+    <script src="./assets/js/exetrnal/jquery.min.js"></script>
+    <!-- bootstrap Js File -->
+    <script src="./assets/js/exetrnal/bootstrap.min.js"></script>
+    <!-- Fontawesome Js File -->
+    <script src="./assets/js/exetrnal/all.min.js"></script>
+     <!-- Owl Carousel Js File -->
+     <script src="./assets/js/exetrnal/owl.carousel.min.js"></script>
+    <!-- App Js File -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

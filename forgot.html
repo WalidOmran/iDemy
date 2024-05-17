@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demy</title>
+    <!-- Jost Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"/>
+   <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/bootstrap.min.css"/>
+    <!-- Fontawesome Css File -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/all.min.css"/>
+    <!-- Owl Carousel Css Files -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/exetrnal/owl.theme.default.min.css" />
+    <!-- style Css File -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+     <!-- style Css File -->
+     <link rel="stylesheet" href="./assets/css/form.css"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header" id="mainHeader">
+        <nav class="navbar ">
+            <div class="main-container container">
+              <button class="main-header__toggle navbar-toggler d-lg-none" type="button" id="navShow">
+                <i class="fas fa-bars"></i>
+              </button>
+              <a class="main-header__logo navbar-brand" href="index.html">
+                  <img class="main-header__logo-img" src="./assets/img/logo.png" alt="Demy" />
+              </a>
+              <div class="main-header__menu d-lg-block" id="headerMenu">
+                <ul class=" main-header__menu-list me-auto mb-2 mb-lg-0">
+                  <li class="nav-item my-0 ">
+                    <button class="main-header__link d-lg-none menu--close text-end navbar-toggler" type="button" id="navClose">
+                      <i class="fa fa-times fa-lg"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item my-0">
+                    <a class="main-header__link link--active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item my-0">
+                    <a class="main-header__link" href="./grid-layout-with-sidebar.html">Courses</a>
+                  </li>
+                  <li class="nav-item my-0 dropdown">
+                    <a class="main-header__link main-header__dropdown-link dropdown-toggle" 
+                    id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                      Pages <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="collapse main-header__dropdown dropdown-menu"  aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="#">Shop Pages</a>
+                      </li>
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="./about.html">About Us</a>
+                      </li>
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="./contact-us.html">Contact</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="my-0 nav-item">
+                    <a class="main-header__link disabled">Dashbord</a>
+                  </li>
+                </ul> 
+              </div>
+              <div class="d-flex justify-content-end align-items-center w-sm-50">
+                <a href="./login.html" class="btn main-header__link d-none d-lg-block">
+                    <i class="fas fa-sign-in-alt"></i> 
+                    <span> Sign In </span> 
+                </a>
+              <a href="./sign-up.html" class="btn main-header__btn">Get Started</a>
+            </div>
+            </div>
+          </nav>
+    </header><!-- ./main-header -->
+    <main>
+        
+        
+        <div class="container main-container">
+            <!-- Form Content Section -->
+            <div class="form-content rounded">
+                <figure class="form-banner">
+                    <img src="./assets/img/banner-3.jpg" class="form-img rounded-top" alt="form banner" />
+                   
+                </figure>
+                <div class="form-caption">
+                    <div class="form-icon">
+                        <i class="fas fa-user main-color"></i>
+                    </div>
+                    <h1 class="form-title text-center">Forgot Password</h1>
+                </div>
+                <form class="">
+                    <div class="mb-3 form-group px-5">
+                        <label for="user" class="form-label form-conten__label">User Name</label>
+                        <input type="email" class="form-control form-conten__input" id="user" placeholder="user@example.com" aria-describedby="emailHelp" />
+                    </div>
+                    <div class="mb-3 form-group px-5">
+                        <button type="submit" class="btn w-100 text-white form-conten__input form-conten__btn">Forgot Password</button>
+                    </div>
+                   
+                    <div class="form-content__footer px-5">
+                        <p>
+                            Don't have account? 
+                            <a href="sign-up.html" class="main-color">Sign Up</a>
+                        </p>
+                        
+                    </div>
+                 </form>
+            </div><!-- ./form-content -->
+        </div>
+        <!-- Call Action -->
+        <section class="call-action">
+            <div class="container main-container">
+              <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                <div class="call-action__text">
+                  <h3 class="call-action__title">Do You Have Any Queries?</h3>
+                  <p class="call-action__desc">We will assist you in furthering your career and growth.</p>
+                </div>
+                <a class="btn call-action__btn text-center text-capitalize" href="#" target="_blank">talk to us</a>
+              </div>
+            </div>
+        </section><!-- ./call-action -->
+    </main>
+   
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      
+       <!-- Social Links -->
+       <section class="main-footer__social-links text-center text-capitalize">
+        <div class="container main-container">
+          <h2 class="main-footer__social-title text-capitalize">you can find us at</h2>
+          <div class="main-footer__social-list d-flex justify-content-center">
+            <a href="#" class="main-footer__social-item" title="facebook">
+              <i class="fab fa-facebook-square fa-2x main-footer__social-icon"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="Linkedin">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="twitter">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="youtube">
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </section><!-- ./main-footer__social-links -->
+      <div class="container main-container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+
+            <section class="main-footer__info">
+              <a href="#" class="w-100 d-flex justify-content-sm-center">
+                <img src="./assets/img/logo-light.png" class="img-fluid main-footer__img" alt="Logo"/>
+              </a>
+              <h5 class="text-white text-start  text-sm-center d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                <span>Why Us</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start text-sm-center d-lg-block" id="collapse">
+                
+                <h5 class="main-footer__title text-white">Do You Require Assistance With Anything?</h5>
+                <p class="main-footer__desc">Every month, receive updates, hot deals, tutorials, and discounts delivered directly to your inbox.</p>
+                <form action="" class="main-footer__form">
+                  <div class="d-flex">
+                    <input type="text" placeholder="Your Email" class="form-control"/>
+                    <input type="submit" value="Submit" class="btn main-footer__btn"/>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">Company</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse">
+                <span>Company</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start text-sm-center d-lg-block" id="collapse-1">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">iDemy Business</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Teach on iDemy</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Get the app</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">About us</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Contact us</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">More</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse">
+                <span>More</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start  text-sm-center d-lg-block" id="collapse-2">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">Careers</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Blog</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Help & Support</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Affiliate</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Investors</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">Customer</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse">
+                <span>Customer</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start  text-sm-center d-lg-block" id="collapse-3">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">Terms</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Privacy policy</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Cookie settings</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Sitemap</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Accessiblity statement</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Copy Right -->
+      <section class="main-footer__copy-right">
+        <div class="container main-container">
+          <p class="main-footer__copy-text text-center mb-0">©<script>document.write(new Date().getFullYear())</script>
+            iDemy. By 
+            <a href="http://" target="_blank" rel="noopener noreferrer">Walid Omran</a>
+          </p>
+        </div>
+      </section><!-- ./main-footer__copy-right -->
+    </footer><!-- ./main-footer -->
+    <!-- jquery File -->
+    <script src="./assets/js/exetrnal/jquery.min.js"></script>
+    <!-- bootstrap Js File -->
+    <script src="./assets/js/exetrnal/bootstrap.min.js"></script>
+    <!-- Fontawesome Js File -->
+    <script src="./assets/js/exetrnal/all.min.js"></script>
+     <!-- Owl Carousel Js File -->
+     <script src="./assets/js/exetrnal/owl.carousel.min.js"></script>
+    <!-- App Js File -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

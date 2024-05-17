@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demy</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <!-- Jost Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"/>
+   <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/bootstrap.min.css"/>
+    <!-- Fontawesome Css File -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/all.min.css"/>
+    <!-- Owl Carousel Css Files -->
+    <link rel="stylesheet" href="./assets/css/exetrnal/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/exetrnal/owl.theme.default.min.css" />
+    <!-- style Css File -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header" id="mainHeader">
+        <nav class="navbar ">
+            <div class="main-container container">
+              <button class="main-header__toggle navbar-toggler d-lg-none" type="button" id="navShow">
+                <i class="fas fa-bars"></i>
+              </button>
+              <a class="main-header__logo navbar-brand" href="index.html">
+                  <img class="main-header__logo-img" src="./assets/img/logo.png" alt="Demy" />
+              </a>
+              <div class="main-header__menu d-lg-block" id="headerMenu">
+                <ul class=" main-header__menu-list me-auto mb-2 mb-lg-0">
+                  <li class="nav-item my-0 ">
+                    <button class="main-header__link d-lg-none menu--close text-end navbar-toggler" type="button" id="navClose">
+                      <i class="fa fa-times fa-lg"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item my-0">
+                    <a class="main-header__link link--active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item my-0">
+                    <a class="main-header__link" href="./grid-layout-with-sidebar.html">Courses</a>
+                  </li>
+                  <li class="nav-item my-0 dropdown">
+                    <a class="main-header__link main-header__dropdown-link dropdown-toggle" 
+                    id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                      Pages <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="collapse main-header__dropdown dropdown-menu"  aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="#">Shop Pages</a>
+                      </li>
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="./about.html">About Us</a>
+                      </li>
+                      <li class="nav-item my-0">
+                        <a class="main-header__link" href="./contact-us.html">Contact</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="my-0 nav-item">
+                    <a class="main-header__link disabled">Dashbord</a>
+                  </li>
+                </ul> 
+              </div>
+              <div class="d-flex justify-content-end align-items-center w-sm-50">
+                <a href="./login.html" class="btn main-header__link d-none d-lg-block">
+                    <i class="fas fa-sign-in-alt"></i> 
+                    <span> Sign In </span> 
+                </a>
+              <a href="./sign-up.html" class="btn main-header__btn">Get Started</a>
+            </div>
+            </div>
+          </nav>
+    </header><!-- ./main-header -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="main-container container d-flex flex-column flex-md-row align-items-center">
+          <!-- Hero Info -->
+          <div class="hero__info w-100 w-md-50">
+            <h1 class="hero__title">Discover The Most Exciting Online Courses.</h1>
+            <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <!-- Hero Form -->
+            <form action="" class="hero__form">
+              <div class="input-group input-group-lg">
+                <!-- <span class="input-group-text" id="addon-wrapping"></span> -->
+                <!-- <i class="fa fa-search ico"></i> -->
+                <input class="hero__search form-control" type="search" name="search" id="" placeholder="Search Your Courses"/>
+                <input class="hero__submit input-group-text" type="submit" value="Search"/>
+              </div>
+            </form><!-- ./hero__form -->
+            <!-- Hero Counter -->
+            <div class="hero__counter d-flex">
+              <div class="hero__counter-item">
+                <h2 class="hero__counter-title">32M</h2>
+                <h6 class="hero__counter-desc">Learners</h6>
+              </div><!-- ./hero__counter-item 01 -->
+              <div class="hero__counter-item">
+                <h2 class="hero__counter-title">100</h2>
+                <h6 class="hero__counter-desc">Countries</h6>
+              </div><!-- ./hero__counter-item 02 -->
+              <div class="hero__counter-item">
+                <h2 class="hero__counter-title">8.1K +</h2>
+                <h6 class="hero__counter-desc">Courses</h6>
+              </div><!-- ./hero__counter-item 03 -->
+            </div><!-- ./hero__counter -->
+          </div><!-- ./hero__info -->
+          <!-- Hero Img -->
+          <figure class="hero__figure w-100 w-md-50">
+            <img class="hero__img" src="./assets/img/side-2-.png" alt="hero img"/>
+          </figure><!-- ./hero-img -->
+        </div>
+      </section><!-- ./hero -->
+      <!-- Tag Award -->
+      <section>
+        <div class="main-container container">
+          <div class="row">
+            <div class="col-12 col-md-4 px-15 tag-content">
+              <div class="tag-card d-flex align-items-center">
+                <div class="tag-card__circle">
+                  <i class="fa fa-journal-whills tag-card__icon"></i>
+                </div>
+                <div class="tag-card__info">
+                  <h5 class="tag-card__title">200+ Courses</h5>
+                  <p class="tag-card__desc">
+                    Duis aute irure dolor in voluptate velit esse cillum labore .
+                  </p>
+                </div>
+              </div><!-- tag-card 01 -->
+            </div>
+            <div class="col-12 col-md-4 px-15 tag-content">
+              <div class="tag-card d-flex align-items-center">
+                <div class="tag-card__circle">
+                  <i class="fa fa-business-time tag-card__icon"></i>
+                </div>
+                <div class="tag-card__info">
+                  <h5 class="tag-card__title">Lifetime Access</h5>
+                  <p class="tag-card__desc">
+                    Duis aute irure dolor in voluptate velit esse cillum labore .
+                  </p>
+                </div>
+              </div><!-- tag-card 02 -->
+            </div>
+            <div class="col-12 col-md-4 px-15 tag-content">
+              <div class="tag-card d-flex align-items-center">
+                <div class="tag-card__circle">
+                  <i class="fa fa-user-shield tag-card__icon"></i>
+                </div>
+                <div class="tag-card__info">
+                  <h5 class="tag-card__title">800k+ Enrolled</h5>
+                  <p class="tag-card__desc">
+                    Duis aute irure dolor in voluptate velit esse cillum labore .
+                  </p>
+                </div>
+              </div><!-- tag-card 03 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Categories -->
+      <section class="categories">
+        <div class="header-section text-center">
+          <h2 class="header-section__title">explore featured 
+            <span class="main-color">categories</span>
+          </h2>
+          <p class="header-section__desc w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div><!-- ./header-section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-code fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">development</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 01-->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-window-restore fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">lifestyle</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 02-->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-leaf fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">web designing</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 03-->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-heartbeat fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">health & fitness</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 04-->
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-landmark fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">gov.exams</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 01-->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-photo-video fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">photography</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 02-->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-stamp fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">finance & accounting</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 03-->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <a class="cate-link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="cate-card text-center text-capitalize">
+                  <div class="cate-card__icon">
+                    <i class="fa fa-school fa-lg"></i>
+                  </div>
+                  <h5 class="cate-card__title">office productivity</h5>
+                  <p class="cate-card__desc">22 lectures</p>
+                </div>
+              </a><!-- ./cate-link 04-->
+            </div>
+          </div>
+        </div>
+      </section><!-- ./categories -->
+       <!-- Courses -->
+       <section class="courses">
+        <div class="header-section text-center">
+          <h2 class="header-section__title">find Featured
+            <span class="main-color">courses</span>
+          </h2>
+          <p class="header-section__desc w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div><!-- ./header-section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="courses-card position-relative top-0 left-0 bg-white">
+                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </div>
+                <a href="#">
+                  <figure class="courses-card__figure px-10">
+                    <img class="courses-card__img mw-100" src="./assets/img/Courses/01.jpeg" alt="courses detiles">
+                  </figure>
+                </a>
+                <div class="courses-card__body">
+                  <div class="d-flex justify-content-between align-items-center px-10">
+                    <h6 class="courses-card__cat-title title-color-1">Design</h6>
+                    <h2 class="courses-card__price">
+                      $<span>149</span>
+                    </h2>
+                  </div>
+                  <a href="#" class="">
+                    <h6 class="h6 courses-card__title px-10">UI/UX Design Pattern For Succesfull Software Applications</h6>
+                  </a>
+                  <div class="courses-card__info d-flex px-10">
+                    <div>
+                      <i class="fa fa-clock text-danger"></i>
+                      <span>10 hr 07 min</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-video main-color"></i>
+                      <span>67 Lectures</span>
+                    </div>
+                  </div>
+                  <div class="courses-card__footer d-flex justify-content-between">
+                    <a href="#" class="courses-card__instr-link">
+                      <figure>
+                        <img class="courses-card__instr-img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                      </figure>
+                    </a>
+                    <ul class="d-flex">
+                      <li class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <span>4.7k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-eye"></i>
+                        </div>
+                        <span>42.4k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>4.7</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article><!-- ./courses-card 01 -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="courses-card position-relative top-0 left-0 bg-white">
+                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </div>
+                <a href="#">
+                  <figure class="courses-card__figure px-10">
+                    <img class="courses-card__img mw-100" src="./assets/img/Courses/02.jpeg" alt="courses detiles">
+                  </figure>
+                </a>
+                <div class="courses-card__body">
+                  <div class="d-flex justify-content-between align-items-center px-10">
+                    <h6 class="courses-card__cat-title title-color-2">Accounting</h6>
+                    <h2 class="courses-card__price">
+                      $<span>129</span>
+                    </h2>
+                  </div>
+                  <a href="#" class="">
+                    <h6 class="h6 courses-card__title px-10">Basic Knowledge About Hodiernal Bharat In History</h6>
+                  </a>
+                  <div class="courses-card__info d-flex px-10">
+                    <div>
+                      <i class="fa fa-clock text-danger"></i>
+                      <span>04 hr 07 min</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-video main-color"></i>
+                      <span>27 Lectures</span>
+                    </div>
+                  </div>
+                  <div class="courses-card__footer d-flex justify-content-between">
+                    <a href="#" class="courses-card__instr-link">
+                      <figure>
+                        <img class="courses-card__instr-img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                      </figure>
+                    </a>
+                    <ul class="d-flex">
+                      <li class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <span>4.7k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-eye"></i>
+                        </div>
+                        <span>42.4k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>4.7</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article><!-- ./courses-card 02 -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="courses-card position-relative top-0 left-0 bg-white">
+                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </div>
+                <a href="#">
+                  <figure class="courses-card__figure px-10">
+                    <img class="courses-card__img mw-100" src="./assets/img/Courses/03.jpeg" alt="courses detiles">
+                  </figure>
+                </a>
+                <div class="courses-card__body">
+                  <div class="d-flex justify-content-between align-items-center px-10">
+                    <h6 class="courses-card__cat-title title-color-3">Physics</h6>
+                    <h2 class="courses-card__price">
+                      $<span>99</span>
+                    </h2>
+                  </div>
+                  <a href="#" class="">
+                    <h6 class="h6 courses-card__title px-10">Advance PHP Knowledge With Laravel To Make Smart Web</h6>
+                  </a>
+                  <div class="courses-card__info d-flex px-10">
+                    <div>
+                      <i class="fa fa-clock text-danger"></i>
+                      <span>07 hr 10 min</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-video main-color"></i>
+                      <span>32 Lectures</span>
+                    </div>
+                  </div>
+                  <div class="courses-card__footer d-flex justify-content-between">
+                    <a href="#" class="courses-card__instr-link">
+                      <figure>
+                        <img class="courses-card__instr-img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                      </figure>
+                    </a>
+                    <ul class="d-flex">
+                      <li class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <span>4.7k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-eye"></i>
+                        </div>
+                        <span>42.4k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>4.7</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article><!-- ./courses-card 03 -->
+            </div>
+        
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="courses-card position-relative top-0 left-0 bg-white">
+                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </div>
+                <a href="#">
+                  <figure class="courses-card__figure px-10">
+                    <img class="courses-card__img mw-100" src="./assets/img/Courses/01.jpeg" alt="courses detiles">
+                  </figure>
+                </a>
+                <div class="courses-card__body">
+                  <div class="d-flex justify-content-between align-items-center px-10">
+                    <h6 class="courses-card__cat-title title-color-4">Business</h6>
+                    <h2 class="courses-card__price">
+                      $<span>139</span>
+                    </h2>
+                  </div>
+                  <a href="#" class="">
+                    <h6 class="h6 courses-card__title px-10">The Complete Accounting & Bank Financial Course 2021</h6>
+                  </a>
+                  <div class="courses-card__info d-flex px-10">
+                    <div>
+                      <i class="fa fa-clock text-danger"></i>
+                      <span>06 hr 20 min</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-video main-color"></i>
+                      <span>28 Lectures</span>
+                    </div>
+                  </div>
+                  <div class="courses-card__footer d-flex justify-content-between">
+                    <a href="#" class="courses-card__instr-link">
+                      <figure>
+                        <img class="courses-card__instr-img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                      </figure>
+                    </a>
+                    <ul class="d-flex">
+                      <li class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <span>4.7k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-eye"></i>
+                        </div>
+                        <span>42.4k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>4.7</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article><!-- ./courses-card 01 -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="courses-card position-relative top-0 left-0 bg-white">
+                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </div>
+                <a href="#">
+                  <figure class="courses-card__figure px-10">
+                    <img class="courses-card__img mw-100" src="./assets/img/Courses/04.jpeg" alt="courses detiles">
+                  </figure>
+                </a>
+                <div class="courses-card__body">
+                  <div class="d-flex justify-content-between align-items-center px-10">
+                    <h6 class="courses-card__cat-title title-color-5">Finance</h6>
+                    <h2 class="courses-card__price">
+                      $<span>99</span>
+                    </h2>
+                  </div>
+                  <a href="#" class="">
+                    <h6 class="h6 courses-card__title px-10">The Complete Business Plan Course Includes 50 Templates</h6>
+                  </a>
+                  <div class="courses-card__info d-flex px-10">
+                    <div>
+                      <i class="fa fa-clock text-danger"></i>
+                      <span>04 hr 17 min</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-video main-color"></i>
+                      <span>18 Lectures</span>
+                    </div>
+                  </div>
+                  <div class="courses-card__footer d-flex justify-content-between">
+                    <a href="#" class="courses-card__instr-link">
+                      <figure>
+                        <img class="courses-card__instr-img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                      </figure>
+                    </a>
+                    <ul class="d-flex">
+                      <li class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <span>4.7k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-eye"></i>
+                        </div>
+                        <span>42.4k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>4.7</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article><!-- ./courses-card 05 -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="courses-card position-relative top-0 left-0 bg-white">
+                <div class="courses-card__icons position-absolute top-0 left-0 w-100 d-flex justify-content-between">
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="courses-card__icon d-flex justify-content-center align-items-center rounded-circle bg-white">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </div>
+                <a href="#">
+                  <figure class="courses-card__figure px-10">
+                    <img class="courses-card__img mw-100" src="./assets/img/Courses/03.jpeg" alt="courses detiles">
+                  </figure>
+                </a>
+                <div class="courses-card__body">
+                  <div class="d-flex justify-content-between align-items-center px-10">
+                    <h6 class="courses-card__cat-title title-color-6">Banking</h6>
+                    <h2 class="courses-card__price">
+                      $<span>199</span>
+                    </h2>
+                  </div>
+                  <a href="#" class="">
+                    <h6 class="h6 courses-card__title px-10">Full Web Designing Course With 20 Web Template Designing</h6>
+                  </a>
+                  <div class="courses-card__info d-flex px-10">
+                    <div>
+                      <i class="fa fa-clock text-danger"></i>
+                      <span>10 hr 42 min</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-video main-color"></i>
+                      <span>74 Lectures</span>
+                    </div>
+                  </div>
+                  <div class="courses-card__footer d-flex justify-content-between">
+                    <a href="#" class="courses-card__instr-link">
+                      <figure>
+                        <img class="courses-card__instr-img mw-100 rounded-circle" src="./assets/img/Courses/undefined - Imgur.jpg" alt="instrctor detail"/>
+                      </figure>
+                    </a>
+                    <ul class="d-flex">
+                      <li class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <span>4.7k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-eye"></i>
+                        </div>
+                        <span>42.4k</span>
+                      </li>
+                      <li  class="d-flex">
+                        <div class="courses-card__footer-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>4.7</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article><!-- ./courses-card 06 -->
+            </div>
+          </div>
+          <div class=" w-100  text-center">
+            <a href="#" class="btn courses-btn">Explore More Courses</a>
+          </div>
+        </div>
+      </section><!-- ./courses -->
+      <!-- Work Process -->
+      <section class="work-process">
+        <div class="container-fluid">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="work-process__info work-process__ps w-100  w-md-50 order-1 order-md-0">
+              <h2 class="work-process__title w-75">We Have The Most Qualified Instructors In The City.</h2>
+              <p class="work-process__desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique</p>
+              <ul class="work-process__list ps-0">
+                <li class="work-process__list-item d-flex align-items-center">
+                  <div class="work-process__list-icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <h6 class="work-process__list-title">Full Lifetime Access</h6>
+                </li>
+                <li class="work-process__list-item d-flex align-items-center">
+                  <div class="work-process__list-icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <h6 class="work-process__list-title">20+ Downloadable Resources</h6>
+                </li>
+                <li class="work-process__list-item d-flex align-items-center">
+                  <div class="work-process__list-icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <h6 class="work-process__list-title">Certificate Of Completion</h6>
+                </li>
+                <li class="work-process__list-item d-flex align-items-center">
+                  <div class="work-process__list-icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <h6 class="work-process__list-title">Free Trial 7 Days</h6>
+                </li>
+              </ul>
+              <a href="#" class="btn work-process__btn">Enrolled Today</a>
+            </div>
+            <figure  class="work-process__figure w-100 w-md-50 order-0 order-md-1">
+              <img src="./assets/img/work process/01.jpg" alt="work Process img 1" class="work-process__img mw-100">
+            </figure>
+          </div>
+          <div class="d-flex flex-column flex-md-row">
+            <figure  class="work-process__figure w-100 w-md-50">
+              <img src="./assets/img/work process/02.jpg" alt="work Process img 1" class="work-process__img mw-100">
+            </figure>
+            <div class="work-process__info work-process__pe w-100 w-md-50">
+               <ul>
+                <li class="d-flex">
+                  <div class="work-process__icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fa fa-photo-video fa-lg"></i>
+                  </div>
+                  <div class="work-process__list-info">
+                    <h3 class="work-process__sub-title">Easy Uploads Lectures</h3>
+                    <p class="work-process__sub-desc">Oluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div class="work-process__icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fa fa-edit fa-lg"></i>
+                  </div>
+                  <div class="work-process__list-info">
+                    <h3 class="work-process__sub-title">Customize According You</h3>
+                    <p class="work-process__sub-desc">Error sit voluptatem actium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div class="work-process__icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fa fa-question-circle fa-lg"></i>
+                  </div>
+                  <div class="work-process__list-info">
+                    <h3 class="work-process__sub-title">Ask Unlimited Questions</h3>
+                    <p class="work-process__sub-desc">Error sit voluptatem actium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div class="work-process__icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fa fa-thumbs-up fa-lg"></i>
+                  </div>
+                  <div class="work-process__list-info">
+                    <h3 class="work-process__sub-title">100% Satisfactions</h3>
+                    <p class="work-process__sub-desc">Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section><!-- ./work-process -->
+      <!-- Instructors -->
+      <section class="instructors">
+        <div class="header-section text-center">
+          <h2 class="header-section__title">our top 
+            <span class="main-color">instructors</span>
+          </h2>
+          <p class="header-section__desc w-50 mx-auto">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+        </div><!-- ./header-section -->
+        <div class="container main-container">
+          <section class="loop owl-carousel owl-theme instructors-area__slider">
+            <article class="inst-card">
+              <figure class="inst-card__header">
+                <img src="./assets/img/Instructors/01.png" class="inst-card__img img-fluid" alt="Instructor img">
+              </figure>
+              <!-- ./inst-card__header -->
+              <div class="inst-card__body  text-center text-capitalize">
+                <p class="inst-card__cate m-auto">math teacher</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h5 class="inst-card__title">david e. lampkin</h5>
+                </a>
+                <div class="inst-card__reviews d-flex justify-content-center">
+                  <div class="inst-card__reviews-icons">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star-half filled"></i>
+                  </div>
+                  <p class="inst-card__reviews-text">(244 reviews)</p>
+                </div>
+              </div><!-- ./inst-card__body -->
+              <div class="inst-card__footer d-flex justify-content-between align-items-center">
+                <div class="inst-card__user d-flex">
+                  <div class="inst-card__user-icon">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="inst-card__user-text">2.5k Users Enrolled</div>
+                </div>
+                <a href="./instructor-detail.html" class="btn inst-card__btn text-capitalize">enroll now</a>
+              </div><!-- ./inst-card__footer -->
+            </article><!-- ./inst-card 01 -->
+            <article class="inst-card">
+              <figure class="inst-card__header">
+                <img src="./assets/img/Instructors/02.png" class="inst-card__img img-fluid" alt="Instructor img">
+              </figure><!-- ./inst-card__header -->
+              <div class="inst-card__body  text-center text-capitalize">
+                <p class="inst-card__cate m-auto">History Teacher</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h5 class="inst-card__title">Feng Yammoto</h5>
+                </a>
+                <div class="inst-card__reviews d-flex justify-content-center">
+                  <div class="inst-card__reviews-icons">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star-half filled"></i>
+                  </div>
+                  <p class="inst-card__reviews-text">(244 reviews)</p>
+                </div>
+              </div><!-- ./inst-card__body -->
+              <div class="inst-card__footer d-flex justify-content-between align-items-center">
+                <div class="inst-card__user d-flex">
+                  <div class="inst-card__user-icon">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="inst-card__user-text">2.5k Users Enrolled</div>
+                </div>
+                <a href="./instructor-detail.html" class="btn inst-card__btn text-capitalize">enroll now</a>
+              </div><!-- ./inst-card__footer -->
+            </article><!-- ./inst-card 02 -->
+            <article class="inst-card">
+              <figure class="inst-card__header">
+                <img src="./assets/img/Instructors/03.png" class="inst-card__img img-fluid" alt="Instructor img">
+              </figure>
+              <!-- ./inst-card__header -->
+              <div class="inst-card__body  text-center text-capitalize">
+                <p class="inst-card__cate m-auto">PHP Developer</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h5 class="inst-card__title">Linda R. Gibson</h5>
+                </a>
+                <div class="inst-card__reviews d-flex justify-content-center">
+                  <div class="inst-card__reviews-icons">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star-half filled"></i>
+                  </div>
+                  <p class="inst-card__reviews-text">(244 reviews)</p>
+                </div>
+              </div><!-- ./inst-card__body -->
+              <div class="inst-card__footer d-flex justify-content-between align-items-center">
+                <div class="inst-card__user d-flex">
+                  <div class="inst-card__user-icon">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="inst-card__user-text">2.5k Users Enrolled</div>
+                </div>
+                <a href="./instructor-detail.html" class="btn inst-card__btn text-capitalize">enroll now</a>
+              </div><!-- ./inst-card__footer -->
+            </article><!-- ./inst-card 03 -->
+            <article class="inst-card">
+              <figure class="inst-card__header">
+                <img src="./assets/img/Instructors/04.png" class="inst-card__img img-fluid" alt="Instructor img">
+              </figure>
+              <!-- ./inst-card__header -->
+              <div class="inst-card__body  text-center text-capitalize">
+                <p class="inst-card__cate m-auto">Chemistry Expert</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h5 class="inst-card__title">Douglas M. Mikel</h5>
+                </a>
+                <div class="inst-card__reviews d-flex justify-content-center">
+                  <div class="inst-card__reviews-icons">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star-half filled"></i>
+                  </div>
+                  <p class="inst-card__reviews-text">(244 reviews)</p>
+                </div>
+              </div><!-- ./inst-card__body -->
+              <div class="inst-card__footer d-flex justify-content-between align-items-center">
+                <div class="inst-card__user d-flex">
+                  <div class="inst-card__user-icon">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="inst-card__user-text">2.5k Users Enrolled</div>
+                </div>
+                <a href="./instructor-detail.html" class="btn inst-card__btn text-capitalize">enroll now</a>
+              </div><!-- ./inst-card__footer -->
+            </article><!-- ./inst-card 04 -->
+            <article class="inst-card">
+              <figure class="inst-card__header">
+                <img src="./assets/img/Instructors/05.png" class="inst-card__img img-fluid" alt="Instructor img">
+              </figure>
+              <!-- ./inst-card__header -->
+              <div class="inst-card__body  text-center text-capitalize">
+                <p class="inst-card__cate m-auto">Hindi Teacher</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h5 class="inst-card__title">Rodney T. Doyon</h5>
+                </a>
+                <div class="inst-card__reviews d-flex justify-content-center">
+                  <div class="inst-card__reviews-icons">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star-half filled"></i>
+                  </div>
+                  <p class="inst-card__reviews-text">(244 reviews)</p>
+                </div>
+              </div><!-- ./inst-card__body -->
+              <div class="inst-card__footer d-flex justify-content-between align-items-center">
+                <div class="inst-card__user d-flex">
+                  <div class="inst-card__user-icon">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="inst-card__user-text">2.5k Users Enrolled</div>
+                </div>
+                <a href="./instructor-detail.html" class="btn inst-card__btn text-capitalize">enroll now</a>
+              </div><!-- ./inst-card__footer -->
+            </article><!-- ./inst-card 05 -->
+            <article class="inst-card">
+              <figure class="inst-card__header">
+                <img src="./assets/img/Instructors/06.png" class="inst-card__img img-fluid" alt="Instructor img">
+              </figure>
+              <!-- ./inst-card__header -->
+              <div class="inst-card__body  text-center text-capitalize">
+                <p class="inst-card__cate m-auto">Sanskrit Teacher</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h5 class="inst-card__title">Luella J. Robles</h5>
+                </a>
+                <div class="inst-card__reviews d-flex justify-content-center">
+                  <div class="inst-card__reviews-icons">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star-half filled"></i>
+                  </div>
+                  <p class="inst-card__reviews-text">(244 reviews)</p>
+                </div>
+              </div><!-- ./inst-card__body -->
+              <div class="inst-card__footer d-flex justify-content-between align-items-center">
+                <div class="inst-card__user d-flex">
+                  <div class="inst-card__user-icon">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="inst-card__user-text">2.5k Users Enrolled</div>
+                </div>
+                <a href="./instructor-detail.html" class="btn inst-card__btn text-capitalize">enroll now</a>
+              </div><!-- ./inst-card__footer -->
+            </article><!-- ./inst-card 06 -->
+          </section>
+        </div>
+    </section><!-- ./instructors -->
+         <!-- Package -->
+      <section class="package">
+        <div class="header-section text-center">
+          <h2 class="header-section__title">select your 
+            <span class="main-color">package</span>
+          </h2>
+          <p class="header-section__desc w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div><!-- ./header-section -->
+        <div class="container main-container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <section class="package-card">
+                <div class="package-card__header text-center">
+                  <h6 class="package-card__sub-title text-capitalize">basic</h6>
+                  <h3 class="package-card__title">
+                    <span>$</span>29
+                  </h3>
+                  <p class="package-card__desc">per user, per month</p>
+                </div>
+                <div class="package-card__body">
+                  <ul class="package-card__list">
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Unlimited access to 35,000+ classes</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Easy-to-use admin capabilities</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Feedback from teachers and community</h6>
+                    </li>
+                    <li class="package-card__list-item item-disabled d-flex align-items-center">
+                      <div class="package-card__icon icon--close d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-times"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Onboarding & engagement kit</h6>
+                    </li>
+                    <li class="package-card__list-item item-disabled d-flex align-items-center">
+                      <div class="package-card__icon icon--close d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-times"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Enterprise SLA</h6>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn package-card__btn d-flex justify-content-center align-items-center text-capitalize" href="#" target="_blank">start basic</a>
+              </section><!-- ./package-card -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <section class="package-card center--card">
+                <div class="package-card__header text-center">
+                  <h6 class="package-card__sub-title text-capitalize">standard</h6>
+                  <h3 class="package-card__title">
+                    <span>$</span>49
+                  </h3>
+                  <p class="package-card__desc">per user, per month</p>
+                </div>
+                <div class="package-card__body">
+                  <ul class="package-card__list">
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Unlimited access to 35,000+ classes</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Easy-to-use admin capabilities</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Feedback from teachers and community</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Onboarding & engagement kit</h6>
+                    </li>
+                    <li class="package-card__list-item item-disabled d-flex align-items-center">
+                      <div class="package-card__icon icon--close d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-times"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Enterprise SLA</h6>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn package-card__btn center--card-btn d-flex justify-content-center align-items-center text-capitalize" href="#" target="_blank">start basic</a>
+              </section><!-- ./package-card -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <section class="package-card">
+                <div class="package-card__header text-center">
+                  <h6 class="package-card__sub-title text-capitalize">platinum</h6>
+                  <h3 class="package-card__title">
+                    <span>$</span>79
+                  </h3>
+                  <p class="package-card__desc">2 user, per month</p>
+                </div>
+                <div class="package-card__body">
+                  <ul class="package-card__list">
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Unlimited access to 35,000+ classes</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Easy-to-use admin capabilities</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Feedback from teachers and community</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Onboarding & engagement kit</h6>
+                    </li>
+                    <li class="package-card__list-item d-flex align-items-center">
+                      <div class="package-card__icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h6 class="package-card__list-title">Enterprise SLA</h6>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn package-card__btn d-flex justify-content-center align-items-center text-capitalize" href="#" target="_blank">start basic</a>
+              </section><!-- ./package-card -->
+            </div>
+          </div>
+        </div>
+      </section><!-- ./package -->
+      <!-- Call Action -->
+      <section class="call-action">
+        <div class="container main-container">
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+            <div class="call-action__text">
+              <h3 class="call-action__title">Do You Have Any Queries?</h3>
+              <p class="call-action__desc">We will assist you in furthering your career and growth.</p>
+            </div>
+            <a class="btn call-action__btn text-center text-capitalize" href="#" target="_blank">talk to us</a>
+          </div>
+        </div>
+      </section><!-- ./call-action -->
+    </main>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      
+       <!-- Social Links -->
+       <section class="main-footer__social-links text-center text-capitalize">
+        <div class="container main-container">
+          <h2 class="main-footer__social-title text-capitalize">you can find us at</h2>
+          <div class="main-footer__social-list d-flex justify-content-center">
+            <a href="#" class="main-footer__social-item" title="facebook">
+              <i class="fab fa-facebook-square fa-2x main-footer__social-icon"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="Linkedin">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="twitter">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+            <a href="#" class="main-footer__social-item" title="youtube">
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </section><!-- ./main-footer__social-links -->
+      <div class="container main-container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+
+            <section class="main-footer__info">
+              <a href="#" class="w-100 d-flex justify-content-sm-center">
+                <img src="./assets/img/logo-light.png" class="img-fluid main-footer__img" alt="Logo"/>
+              </a>
+              <h5 class="text-white text-start  text-sm-center d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                <span>Why Us</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start text-sm-center d-lg-block" id="collapse">
+                
+                <h5 class="main-footer__title text-white">Do You Require Assistance With Anything?</h5>
+                <p class="main-footer__desc">Every month, receive updates, hot deals, tutorials, and discounts delivered directly to your inbox.</p>
+                <form action="" class="main-footer__form">
+                  <div class="d-flex">
+                    <input type="text" placeholder="Your Email" class="form-control"/>
+                    <input type="submit" value="Submit" class="btn main-footer__btn"/>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">Company</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse">
+                <span>Company</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start text-sm-center d-lg-block" id="collapse-1">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">iDemy Business</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Teach on iDemy</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Get the app</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">About us</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Contact us</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">More</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse">
+                <span>More</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start  text-sm-center d-lg-block" id="collapse-2">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">Careers</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Blog</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Help & Support</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Affiliate</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Investors</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="main-footer___item">
+              <h5 class="d-none d-sm-block text-white text-center">Customer</h5>
+              <h5 class="text-white d-sm-none d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse">
+                <span>Customer</span>
+                <i class="fas fa-angle-down fa-lg"></i>
+              </h5>
+              <div class="main-footer___collapse collapse text-start  text-sm-center d-lg-block" id="collapse-3">
+                <ul class="main-footer___collapse-list ps-0">
+                 <li class="main-footer___collapse-item">
+                   <a class="main-footer___collapse-link" href="#">Terms</a>
+                  </li>
+                  <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Privacy policy</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Cookie settings</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Sitemap</a>
+                   </li>
+                   <li class="main-footer___collapse-item">
+                    <a class="main-footer___collapse-link" href="#">Accessiblity statement</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Copy Right -->
+      <section class="main-footer__copy-right">
+        <div class="container main-container">
+          <p class="main-footer__copy-text text-center mb-0">©<script>document.write(new Date().getFullYear())</script>
+            iDemy 
+            <!-- <a href="http://" target="_blank" rel="noopener noreferrer">Walid Omran</a> -->
+          </p>
+        </div>
+      </section><!-- ./main-footer__copy-right -->
+    </footer><!-- ./main-footer -->
+    <!-- jquery File -->
+    <script src="./assets/js/exetrnal/jquery.min.js"></script>
+    <!-- bootstrap Js File -->
+    <script src="./assets/js/exetrnal/bootstrap.min.js"></script>
+    <!-- Fontawesome Js File -->
+    <script src="./assets/js/exetrnal/all.min.js"></script>
+     <!-- Owl Carousel Js File -->
+     <script src="./assets/js/exetrnal/owl.carousel.min.js"></script>
+    <!-- App Js File -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
